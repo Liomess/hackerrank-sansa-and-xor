@@ -1,0 +1,9 @@
+def sansaXor(arr):
+    ans=0
+    if len(arr)%2==0:
+        return 0
+    for i in range(len(arr)):
+        
+        if (i+1)%2!=0:
+            ans^=arr[i]
+    return ans
